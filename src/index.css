@@ -6,40 +6,40 @@
 
 @layer base {
   :root {
-    /* Background system */
-    --background: 248 250 252;  /* slate-50 equivalent */
-    --foreground: 215 25% 27%;  /* slate-700 equivalent */
+    /* Dark theme as default - matching Zluri website */
+    --background: 220 27% 8%;    /* Very dark background like Zluri */
+    --foreground: 0 0% 98%;      /* Near white text */
 
-    /* Card system */
-    --card: 0 0% 100%;
-    --card-foreground: 215 25% 27%;
+    /* Card system - slightly lighter than background */
+    --card: 220 27% 12%;
+    --card-foreground: 0 0% 98%;
     
     /* Popover system */
-    --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 27%;
+    --popover: 220 27% 12%;
+    --popover-foreground: 0 0% 98%;
 
-    /* Zluri Brand Colors - Teal Primary */
-    --primary: 184 100% 43%;      /* Zluri's signature teal #00C9DB */
-    --primary-foreground: 0 0% 100%;
-    --primary-light: 184 100% 65%; /* Lighter teal for hover */
-    --primary-dark: 184 100% 35%;  /* Darker teal for active */
+    /* Zluri Brand Colors - Bright Teal Primary */
+    --primary: 184 100% 55%;      /* Bright teal like Zluri website */
+    --primary-foreground: 220 27% 8%;
+    --primary-light: 184 100% 70%; /* Lighter teal for hover */
+    --primary-dark: 184 100% 45%;  /* Darker teal for active */
 
-    /* Zluri Secondary - Green */
-    --secondary: 158 100% 36%;    /* Zluri's green #00B886 */
+    /* Zluri Secondary - Vibrant Green */
+    --secondary: 158 64% 52%;    /* Green like "Book a demo" button */
     --secondary-foreground: 0 0% 100%;
-    --secondary-light: 158 100% 55%;
-    --secondary-dark: 158 100% 28%;
+    --secondary-light: 158 64% 65%;
+    --secondary-dark: 158 64% 40%;
 
     /* Muted colors for subtle elements */
-    --muted: 220 14% 96%;        /* Very light gray-blue */
-    --muted-foreground: 215 16% 47%;
+    --muted: 220 27% 18%;        /* Subtle gray on dark */
+    --muted-foreground: 220 9% 65%;
 
     /* Accent colors - Zluri Blue */
-    --accent: 213 89% 66%;       /* Zluri's blue accent #4F9EF8 */
+    --accent: 213 89% 66%;       /* Blue like "Get a Demo" button */
     --accent-foreground: 0 0% 100%;
 
     /* Status colors */
-    --success: 158 100% 36%;     /* Zluri green for success states */
+    --success: 158 64% 52%;     /* Zluri green for success states */
     --success-foreground: 0 0% 100%;
     --warning: 38 92% 50%;       /* Professional amber */
     --warning-foreground: 0 0% 100%;
@@ -47,40 +47,42 @@
     --destructive-foreground: 0 0% 100%;
 
     /* Border and input styling */
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 184 100% 43%;        /* Zluri teal for focus rings */
+    --border: 220 27% 25%;
+    --input: 220 27% 18%;
+    --ring: 184 100% 55%;        /* Bright Zluri teal for focus rings */
 
     --radius: 0.75rem;  /* Rounded corners for modern look */
 
-    /* Zluri gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-dark)));
-    --gradient-secondary: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--secondary-dark)));
-    --gradient-zluri: linear-gradient(135deg, hsl(184 100% 43%), hsl(158 100% 36%));
-    --gradient-subtle: linear-gradient(180deg, hsl(var(--card)), hsl(var(--muted)));
+    /* Zluri gradients with dark theme */
+    --gradient-primary: linear-gradient(135deg, hsl(184 100% 55%), hsl(184 100% 45%));
+    --gradient-secondary: linear-gradient(135deg, hsl(158 64% 52%), hsl(158 64% 40%));
+    --gradient-zluri: linear-gradient(135deg, hsl(184 100% 55%), hsl(158 64% 52%));
+    --gradient-hero: linear-gradient(135deg, hsl(220 27% 8%), hsl(220 27% 15%));
+    --gradient-subtle: linear-gradient(180deg, hsl(220 27% 12%), hsl(220 27% 8%));
 
-    /* Professional shadows with Zluri teal tint */
-    --shadow-soft: 0 1px 3px 0 hsl(184 100% 43% / 0.1), 0 1px 2px -1px hsl(184 100% 43% / 0.1);
-    --shadow-medium: 0 4px 6px -1px hsl(184 100% 43% / 0.1), 0 2px 4px -2px hsl(184 100% 43% / 0.1);
-    --shadow-large: 0 10px 15px -3px hsl(184 100% 43% / 0.1), 0 4px 6px -4px hsl(184 100% 43% / 0.1);
+    /* Professional shadows with Zluri teal glow */
+    --shadow-soft: 0 1px 3px 0 hsl(184 100% 55% / 0.15), 0 1px 2px -1px hsl(184 100% 55% / 0.15);
+    --shadow-medium: 0 4px 6px -1px hsl(184 100% 55% / 0.2), 0 2px 4px -2px hsl(184 100% 55% / 0.2);
+    --shadow-large: 0 10px 15px -3px hsl(184 100% 55% / 0.25), 0 4px 6px -4px hsl(184 100% 55% / 0.25);
+    --shadow-glow: 0 0 20px hsl(184 100% 55% / 0.3);
 
-    /* Zluri sidebar */
-    --sidebar-background: 0 0% 100%;
-    --sidebar-foreground: 215 25% 27%;
-    --sidebar-primary: 184 100% 43%;    /* Zluri teal */
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 184 100% 97%;     /* Very light teal */
-    --sidebar-accent-foreground: 184 100% 43%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 184 100% 43%;
+    /* Zluri sidebar - dark theme */
+    --sidebar-background: 220 27% 10%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 184 100% 55%;    /* Bright Zluri teal */
+    --sidebar-primary-foreground: 220 27% 8%;
+    --sidebar-accent: 220 27% 18%;      /* Darker accent */
+    --sidebar-accent-foreground: 184 100% 55%;
+    --sidebar-border: 220 27% 25%;
+    --sidebar-ring: 184 100% 55%;
 
     /* Zluri animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 
     /* Zluri accent variations */
-    --zluri-teal: 184 100% 43%;
-    --zluri-green: 158 100% 36%;
+    --zluri-teal: 184 100% 55%;
+    --zluri-green: 158 64% 52%;
     --zluri-blue: 213 89% 66%;
   }
 
