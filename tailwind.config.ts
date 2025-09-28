@@ -69,6 +69,9 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        "zluri-teal": "hsl(var(--zluri-teal))",
+        "zluri-green": "hsl(var(--zluri-green))",
+        "zluri-blue": "hsl(var(--zluri-blue))",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -80,6 +83,7 @@ export default {
       backgroundImage: {
         "gradient-primary": "var(--gradient-primary)",
         "gradient-secondary": "var(--gradient-secondary)",
+        "gradient-zluri": "var(--gradient-zluri)",
         "gradient-subtle": "var(--gradient-subtle)",
       },
       boxShadow: {

@@ -18,28 +18,28 @@
     --popover: 0 0% 100%;
     --popover-foreground: 215 25% 27%;
 
-    /* Enterprise brand colors - Professional blue palette */
-    --primary: 213 94% 68%;      /* Modern enterprise blue */
+    /* Zluri Brand Colors - Teal Primary */
+    --primary: 184 100% 43%;      /* Zluri's signature teal #00C9DB */
     --primary-foreground: 0 0% 100%;
-    --primary-light: 213 94% 85%; /* Lighter blue for hover states */
-    --primary-dark: 213 94% 45%;  /* Darker blue for active states */
+    --primary-light: 184 100% 65%; /* Lighter teal for hover */
+    --primary-dark: 184 100% 35%;  /* Darker teal for active */
 
-    /* Secondary - Professional teal accent */
-    --secondary: 180 78% 75%;    /* Professional teal */
-    --secondary-foreground: 215 25% 27%;
-    --secondary-light: 180 78% 90%;
-    --secondary-dark: 180 78% 60%;
+    /* Zluri Secondary - Green */
+    --secondary: 158 100% 36%;    /* Zluri's green #00B886 */
+    --secondary-foreground: 0 0% 100%;
+    --secondary-light: 158 100% 55%;
+    --secondary-dark: 158 100% 28%;
 
     /* Muted colors for subtle elements */
     --muted: 220 14% 96%;        /* Very light gray-blue */
     --muted-foreground: 215 16% 47%;
 
-    /* Accent colors */
-    --accent: 213 94% 97%;       /* Very light blue */
-    --accent-foreground: 213 94% 68%;
+    /* Accent colors - Zluri Blue */
+    --accent: 213 89% 66%;       /* Zluri's blue accent #4F9EF8 */
+    --accent-foreground: 0 0% 100%;
 
     /* Status colors */
-    --success: 142 76% 36%;      /* Professional green */
+    --success: 158 100% 36%;     /* Zluri green for success states */
     --success-foreground: 0 0% 100%;
     --warning: 38 92% 50%;       /* Professional amber */
     --warning-foreground: 0 0% 100%;
@@ -49,74 +49,82 @@
     /* Border and input styling */
     --border: 220 13% 91%;
     --input: 220 13% 91%;
-    --ring: 213 94% 68%;
+    --ring: 184 100% 43%;        /* Zluri teal for focus rings */
 
     --radius: 0.75rem;  /* Rounded corners for modern look */
 
-    /* Enterprise gradients */
+    /* Zluri gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-dark)));
     --gradient-secondary: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--secondary-dark)));
+    --gradient-zluri: linear-gradient(135deg, hsl(184 100% 43%), hsl(158 100% 36%));
     --gradient-subtle: linear-gradient(180deg, hsl(var(--card)), hsl(var(--muted)));
 
-    /* Professional shadows */
-    --shadow-soft: 0 1px 3px 0 hsl(213 94% 68% / 0.1), 0 1px 2px -1px hsl(213 94% 68% / 0.1);
-    --shadow-medium: 0 4px 6px -1px hsl(213 94% 68% / 0.1), 0 2px 4px -2px hsl(213 94% 68% / 0.1);
-    --shadow-large: 0 10px 15px -3px hsl(213 94% 68% / 0.1), 0 4px 6px -4px hsl(213 94% 68% / 0.1);
+    /* Professional shadows with Zluri teal tint */
+    --shadow-soft: 0 1px 3px 0 hsl(184 100% 43% / 0.1), 0 1px 2px -1px hsl(184 100% 43% / 0.1);
+    --shadow-medium: 0 4px 6px -1px hsl(184 100% 43% / 0.1), 0 2px 4px -2px hsl(184 100% 43% / 0.1);
+    --shadow-large: 0 10px 15px -3px hsl(184 100% 43% / 0.1), 0 4px 6px -4px hsl(184 100% 43% / 0.1);
 
-    /* Enterprise sidebar */
+    /* Zluri sidebar */
     --sidebar-background: 0 0% 100%;
     --sidebar-foreground: 215 25% 27%;
-    --sidebar-primary: 213 94% 68%;
+    --sidebar-primary: 184 100% 43%;    /* Zluri teal */
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 213 94% 97%;
-    --sidebar-accent-foreground: 213 94% 68%;
+    --sidebar-accent: 184 100% 97%;     /* Very light teal */
+    --sidebar-accent-foreground: 184 100% 43%;
     --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 213 94% 68%;
+    --sidebar-ring: 184 100% 43%;
 
-    /* Enterprise animations */
+    /* Zluri animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Zluri accent variations */
+    --zluri-teal: 184 100% 43%;
+    --zluri-green: 158 100% 36%;
+    --zluri-blue: 213 89% 66%;
   }
 
   .dark {
-    /* Dark mode for enterprise apps */
-    --background: 215 28% 17%;
+    /* Dark mode with Zluri navy background */
+    --background: 220 26% 14%;   /* Dark navy background like Zluri */
     --foreground: 213 31% 91%;
 
-    --card: 215 28% 17%;
+    --card: 220 26% 18%;         /* Slightly lighter navy for cards */
     --card-foreground: 213 31% 91%;
 
-    --popover: 215 28% 17%;
+    --popover: 220 26% 18%;
     --popover-foreground: 213 31% 91%;
 
-    --primary: 213 94% 68%;
-    --primary-foreground: 0 0% 100%;
-    --primary-light: 213 94% 85%;
-    --primary-dark: 213 94% 45%;
+    /* Zluri colors maintain vibrancy in dark mode */
+    --primary: 184 100% 55%;     /* Brighter teal for dark mode */
+    --primary-foreground: 220 26% 14%;
+    --primary-light: 184 100% 70%;
+    --primary-dark: 184 100% 45%;
 
-    --secondary: 180 78% 75%;
-    --secondary-foreground: 215 28% 17%;
-    --secondary-light: 180 78% 90%;
-    --secondary-dark: 180 78% 60%;
+    --secondary: 158 100% 45%;   /* Brighter green for dark mode */
+    --secondary-foreground: 220 26% 14%;
+    --secondary-light: 158 100% 60%;
+    --secondary-dark: 158 100% 35%;
 
-    --muted: 215 28% 25%;
+    --muted: 220 26% 25%;
     --muted-foreground: 217 10% 65%;
 
-    --accent: 215 28% 25%;
-    --accent-foreground: 213 94% 68%;
+    --accent: 213 89% 70%;       /* Brighter blue for dark mode */
+    --accent-foreground: 220 26% 14%;
 
-    --border: 215 28% 25%;
-    --input: 215 28% 25%;
-    --ring: 213 94% 68%;
+    --border: 220 26% 25%;
+    --input: 220 26% 25%;
+    --ring: 184 100% 55%;
 
-    --sidebar-background: 215 28% 17%;
+    /* Dark mode sidebar */
+    --sidebar-background: 220 26% 14%;
     --sidebar-foreground: 213 31% 91%;
-    --sidebar-primary: 213 94% 68%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 215 28% 25%;
-    --sidebar-accent-foreground: 213 94% 68%;
-    --sidebar-border: 215 28% 25%;
-    --sidebar-ring: 213 94% 68%;
+    --sidebar-primary: 184 100% 55%;
+    --sidebar-primary-foreground: 220 26% 14%;
+    --sidebar-accent: 220 26% 25%;
+    --sidebar-accent-foreground: 184 100% 55%;
+    --sidebar-border: 220 26% 25%;
+    --sidebar-ring: 184 100% 55%;
   }
 }
 
